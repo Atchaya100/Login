@@ -17,6 +17,10 @@ import com.example.demo.service.LoginService;
 public class LoginController {
 	@Autowired
 	LoginService service;
+	 @GetMapping("/")
+		public String Hi() {
+			return "hello";
+		}
     @PostMapping("/create")
 	public Login create(@RequestBody Login login) {
 		return service.createAccount(login);
