@@ -14,7 +14,7 @@ import com.example.demo.entity.Login;
 import com.example.demo.service.LoginService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins ="https://singular-longma-a5f2a4.netlify.app")
 public class LoginController {
 	@Autowired
 	LoginService service;
